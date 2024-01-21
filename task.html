@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="task.css">
+    
+</head>
+<body>
+    <div class="container">
+        <button id="addBtn">Add</button>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>sl.no</th>
+                    <th>Image of person</th>
+                    <th>Name of the person</th>
+                    <th>Edit/delete</th>
+                </tr>
+            </thead>
+            <tbody id="dataBody"></tbody>
+        </table>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Add Record/Edit :</h2>
+            <form id="dataForm">
+                <label for="personName">Name of the person:</label>
+                <input type="text" id="personName" name="personName" required>
+                <label for="personImage">Image URL of the person:</label>
+                <input type="url" id="personImage" name="personImage" required>
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="task.js">     
+    </script>
+</body>
+
+</html>
